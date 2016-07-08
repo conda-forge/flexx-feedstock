@@ -10,7 +10,9 @@ source:
   sha256: ce89e72dd80dc38eca65837af0e37c55c9c498876f8ab68919e898fe733ca318
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: |
+    python -c 'import flexx.ui'
+    python setup.py install --single-version-externally-managed --record=record.txt
   number: 0
 
 requirements:
@@ -43,4 +45,3 @@ extra:
     - almarklein
     - ivoflipse
     - korijn 
-
