@@ -5,14 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  fn: flexx-{{ version }}.tar.gz
-  url: https://github.com/zoofIO/flexx/archive/v{{ version }}.tar.gz
-  sha256: ce89e72dd80dc38eca65837af0e37c55c9c498876f8ab68919e898fe733ca318
+  fn: flexx-{{ version }}.zip
+  url: https://pypi.python.org/packages/1f/5a/e9afddb84a527c4024e3b4f20b32c4c2ca8bd73dc034e28ccedb3ba22cb7/flexx-{{ version }}.zip
+  md5: ecfa24a53d955a9ab29ee321f5f6de25
 
 build:
-  script: |
-    python -c 'import flexx.ui'
-    python setup.py install --single-version-externally-managed --record=record.txt
+  script: python setup.py install --single-version-externally-managed --record=record.txt
   number: 0
 
 requirements:
