@@ -1,4 +1,4 @@
-{% set version = "0.4" %}
+{% set version = "0.4.1" %}
 
 package:
   name: flexx
@@ -6,8 +6,7 @@ package:
 
 source:
   fn: flexx-{{ version }}.zip
-  url: https://pypi.python.org/packages/1f/5a/e9afddb84a527c4024e3b4f20b32c4c2ca8bd73dc034e28ccedb3ba22cb7/flexx-{{ version }}.zip
-  md5: ecfa24a53d955a9ab29ee321f5f6de25
+  url: https://github.com/zoofIO/flexx/archive/v{{ version }}.tar.gz
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
