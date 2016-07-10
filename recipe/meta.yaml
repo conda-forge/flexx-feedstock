@@ -5,9 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  fn: flexx-{{ version }}.tar.gz
-  url: https://github.com/zoofIO/flexx/archive/v{{ version }}.tar.gz
-  sha256: d6395dd37ed01387673813a1465a1bd9e2170eb80fda92298fb13d40f40a76f5
+  fn: flexx-b2d766117d13f3afd6cc5ace26c4380fd3be6805.tar.gz
+  url: https://github.com/zoofIO/flexx/archive/b2d766117d13f3afd6cc5ace26c4380fd3be6805.tar.gz
+  sha256: 6815151640a58b60a458c354ce81cfb1315319ae5810160d4c04d86797d94cca
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
