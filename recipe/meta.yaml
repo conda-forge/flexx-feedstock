@@ -7,6 +7,7 @@ package:
 source:
   fn: flexx-{{ version }}.zip
   url: https://github.com/zoofIO/flexx/archive/v{{ version }}.tar.gz
+  sha256: d6395dd37ed01387673813a1465a1bd9e2170eb80fda92298fb13d40f40a76f5
 
 build:
   script: python setup.py install --single-version-externally-managed --record=record.txt
