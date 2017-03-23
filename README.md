@@ -11,6 +11,18 @@ Summary: Python UI tookit based on web technology
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flexx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flexx-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/flexx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flexx-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flexx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flexx-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flexx/badges/version.svg)](https://anaconda.org/conda-forge/flexx)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flexx/badges/downloads.svg)](https://anaconda.org/conda-forge/flexx)
+
 Installing flexx
 ================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `flexx` available on your platform
 ```
 conda search flexx --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/flexx-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/flexx-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/flexx-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/flexx-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/flexx-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/flexx-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flexx/badges/version.svg)](https://anaconda.org/conda-forge/flexx)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/flexx/badges/downloads.svg)](https://anaconda.org/conda-forge/flexx)
 
 
 Updating flexx-feedstock
