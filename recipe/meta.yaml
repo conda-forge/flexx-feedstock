@@ -10,11 +10,15 @@ source:
   md5: 7138a378aa68d781212c4b2cfb6ddfcb
 
 build:
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-  number: 0
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  entry_points:
+    - flexx = flexx.__main__:main
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
     - tornado
