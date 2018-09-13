@@ -22,9 +22,11 @@ requirements:
   build:
     - python >=3
     - pip
-    - tornado
   run:
     - python >=3
+    - pscript
+    - webruntime
+    - dialite
     - tornado
 
 test:
