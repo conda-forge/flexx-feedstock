@@ -20,11 +20,11 @@ build:
 
 requirements:
   build:
-    - python
+    - python >=3
     - pip
     - tornado
   run:
-    - python
+    - python >=3
     - tornado
 
 test:
