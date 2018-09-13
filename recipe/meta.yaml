@@ -1,46 +1,45 @@
-{% set version = "0.4.1" %}
+{% set name = "flexx" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "ccd79a1bee9934f0dcfdf3c43d645022f50f1a259732497210430752b40997e2" %}
 
 package:
-  name: flexx
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: flexx-{{ version }}.zip
-  url: https://pypi.python.org/packages/0d/82/11900c3972ca2871772ca5d16d9f631a1c2dac53bd75e38bd8253f8fcd2b/flexx-0.4.1.zip
-  md5: 7138a378aa68d781212c4b2cfb6ddfcb
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
-  number: 1
+  number: 0
   entry_points:
     - flexx = flexx.__main__:main
 
 requirements:
-  host:
+  build:
+    - python >=3
     - pip
-    - python
-    - setuptools
-    - tornado
   run:
-    - python
+    - python >=3
+    - pscript
+    - webruntime
+    - dialite
     - tornado
 
 test:
   imports:
-    - flexx.ui
-    - flexx.app
-    - flexx.event
-    - flexx.pyscript
-    - flexx.webruntime
-    - flexx.util
+    - flexx.flx
 
 about:
-  home: http://github.com/zoofIO/flexx
+  home: http://github.com/flexxui/flexx
   doc_url: http://flexx.readthedocs.io
-  dev_url: http://github.com/zoofIO/flexx
+  dev_url: http://github.com/flexxui/flexx
   summary: Python UI tookit based on web technology
   license: BSD 2-Clause
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
