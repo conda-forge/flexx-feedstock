@@ -1,6 +1,6 @@
 {% set name = "flexx" %}
-{% set version = "0.5.0" %}
-{% set sha256 = "ccd79a1bee9934f0dcfdf3c43d645022f50f1a259732497210430752b40997e2" %}
+{% set version = "0.6.0" %}
+{% set sha256 = "36baaf515a15913f72d2d54dad300b241a1b41f49f62e1bfc02a1588bbd37c24" %}
 
 package:
   name: {{ name }}
