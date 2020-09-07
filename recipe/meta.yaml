@@ -1,6 +1,6 @@
 {% set name = "flexx" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "ee7de225aac13ea1a03c4bc7460dde89b39b8c3ca71d1e024926ef9f02b872dd" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "a691f1f950efef17c37831a994c7e09c6fc24573b95a45439c2c8d1b6c765388" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
   entry_points:
     - flexx = flexx.__main__:main
