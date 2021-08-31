@@ -1,6 +1,6 @@
 {% set name = "flexx" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "a691f1f950efef17c37831a994c7e09c6fc24573b95a45439c2c8d1b6c765388" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "79015c44e86e2b8f786fc726c527b987109215e1ea7134b65fe2a22721d80f8a" %}
 
 package:
   name: {{ name }}
@@ -19,7 +19,7 @@ build:
     - flexx = flexx.__main__:main
 
 requirements:
-  build:
+  host:
     - python >=3
     - pip
   run:
